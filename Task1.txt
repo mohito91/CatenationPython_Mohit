@@ -1,0 +1,63 @@
+#Task 1
+
+#1. Create three variables in a single line and assign values to them in such a manner that each one of
+#them belongs to a different data type.
+
+a,b,c = 'x',1,4.6
+print(a,b,c)
+
+#2. Create a variable of type complex and swap it with another variable of type integer.
+a = 2 + 3j
+b = 3
+print ("a: ",a)
+print ("b: ",b)
+c=a
+a=b
+b=c
+print("swapped value of a: ")
+print("swapped value of b: ")
+
+#3. Swap two numbers using a third variable and do the same task without using any third variable.
+a = int(input("Please enter value of a: "))
+b = int(input("Please enter value of b: "))
+c = a
+a = b
+b = c
+print ("swapped value of a is: ",a)
+print ("swapped value of b is: ",b)
+
+# 4. Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x
+# Version.
+
+a= eval(input("please enter a number:"))
+print("The number you entered is:",a)
+
+# 5
+# Ask users to enter any 2 numbers in between 1-10 , add the two numbers and keep the sum in
+# another variable called z. Add 30 to z and store the output in variable result and print result as the
+# final output.
+
+def sum (x,y):
+    res = x + y
+    return res
+a = int(input("please enter your first number between 1 and 10: "))
+b = int(input("please enter your second number between 1 and 10: "))
+z = sum(a,b)
+result = sum(30,z)
+print(result)
+
+#6. Write a program to check the data type of the entered values.
+# HINT: Printed output should say - The data type of the input value is : int/float/string/etc
+a = eval(input("enter any value to show the data type: "))
+print(type(a))
+
+# 7. Create Variables using formats such as Upper CamelCase, Lower CamelCase, SnakeCase and
+# UPPERCASE.
+# (Refer: https://capitalizemytitle.com/camel-case/)
+a = input("enter your name to convert to Lower CamelCase and Upper CamelCase, SnakeCase and UPPERCASE: ")
+
+# 8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’
+# again. Will it change the value? If Yes then Why?
+
+#yes, the value of a will change. since, Python is dynamic and imperative.
+
