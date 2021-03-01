@@ -1,0 +1,158 @@
+Task 4
+
+#1
+a= input("please enter your name:")
+b = a[::-1]
+print(b)
+
+#2
+a = input("Enter string with upper & lower case: ")
+count1=0
+count2=0
+for i in a:
+    if(i.isupper()) == True:
+        count1+=1
+    elif(i.islower()) == True:
+        count2+=1
+print("No of Uppercase characters: ",count1)
+print("No of Lowercase characters: ",count2)
+
+#3
+def unique(l):
+    l1=[]
+    for a in l:
+        if a not in l1:
+            l1.append(a)
+    return l1
+
+print(unique([1,2,3,1,2,3,1,2,3,4,4,5,5]))
+
+
+#4
+print("Please enter hyphen separated values: ")
+hyphen = [n for n in input().split('-')]
+hyphen.sort()
+print('-'.join(hyphen))
+
+
+#5
+a = input("Enter a sentence: ")
+print(a.upper())
+
+#6
+def strint(a,b):
+     print(int(a) + int(b))
+
+a = input("enter the first number: ")
+b = input("enter the second number: ")
+strint(a,b)
+
+
+#7
+def maxstring(x,y):
+    if len(x) > len(y):
+        print("the string with the max length is:", x)
+    else:
+        print("the string with the max length is:", y)
+
+a = input("Enter the first string: ")
+b = input("Enter the second string: ")
+maxstring(a,b)
+
+#8
+def tupfunc():
+    l = list()
+    for i in range(1, 21):
+        l.append(i**2)
+        t = tuple(l)
+    if len(t) > 19:
+        print(t)
+
+tupfunc()
+
+#9
+def showNumbers():
+    limit = 5
+    for i in range(0, limit):
+        if i%2==0:
+            print(i,"Even")
+        else:
+            print(i,"Odd")
+
+showNumbers()
+
+#10
+l = range(1,21)
+even = list(filter(lambda n:n%2==0,l))
+print(even)
+
+#11
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even = list(filter(lambda n:n%2==0,l))
+square = list(map(lambda n:n*n, l))
+print (square)
+
+#12
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def square():
+    for i in l:
+        i = i**2
+    return i
+
+square()
+
+print(list(map(square(),l)))
+
+
+#13
+import functools
+l = [1, 2, 3, 4, 5, 6, 7]
+print(functools.reduce(lambda n:n*n, l))
+
+#14
+l = [7,14,21,28,35]
+print(list(filter(lambda n:n%3!=0 and n%7==0, l)))
+
+#15
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def square(i):
+    i = i**2
+    return i
+
+ls = (map(square,l))
+
+for x in ls:
+    print(x)
+
+#16
+def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)
+
+OUTPUT
+2
+
+def a():
+    try:
+        f(x, 4)
+    finally:
+        print('after f')
+        print('after f?')
+a()
+
+OUTPUT
+after f
+after f?
+Traceback (most recent call last):
+  File "C:\Users\mohit\PycharmProjects\MyFirst\Assignment34.py", line 175, in <module>
+    a()
+  File "C:\Users\mohit\PycharmProjects\MyFirst\Assignment34.py", line 171, in a
+    f(x, 4)
+NameError: name 'f' is not defined
+
+Process finished with exit code 1
