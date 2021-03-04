@@ -7,15 +7,19 @@ elif a%3==0: print("Consultadd")
 
 #2
 a = int(input("please enter a number between 1 and 5: "))
-num1 = int(input("please enter your first number: "))
-num2 = int(input("please enter your second number: "))
-if a==1: print(num1+num2)
-elif a==2: print(num1-num2)
-elif a==3: print(num1/num2)
-elif a==4: print(num1*num2)
-elif a==5: print((num1 + num2)/2)
-elif a<0: print("NEGATIVE")
-
+if a != 5:
+    num1 = int(input("please enter your first number: "))
+    num2 = int(input("please enter your second number: "))
+else:
+    first = int(input("please enter your first number: "))
+    second = int(input("please enter your second number: "))
+if a == 1 and (num1 + num2) > 0: print(num1 + num2)
+elif a == 2 and (num1 - num2) > 0: print(num1 - num2)
+elif a == 3 and (num1 / num2) > 0: print(num1 / num2)
+elif a == 4 and (num1 * num2) > 0: print(num1 * num2)
+elif a == 5 and ((first + second) / 2) > 0:
+    print((first + second) / 2)
+else: print("NEGATIVE")
 
 #3
 a=10
