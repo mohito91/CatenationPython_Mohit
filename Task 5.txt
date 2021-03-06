@@ -1,0 +1,91 @@
+#Task 5
+
+#1
+Exception handling can handle errors such as TypeError, ZeroDivisionError, and NameError but not Syntax Error
+Example
+try:
+    x = eval(input(("enter value of x: "))
+    y = eval(input(("enter value of y: ")
+except SyntaxError:
+    print("Please correct Syntax!")
+
+#2
+
+import sys
+try:
+    file_name = print(input("please enter file name to open: "))
+    if file_name == doc.txt and len(sys.argv) > 0:
+        print(doc.txt.read())
+    else:
+        raise Exception
+except Exception:
+    print("File name incorrect!")
+
+#3
+x = int(input("please enter a 4 digit number: "))
+try:
+    if x>9999:
+        raise Exception
+except Exception:
+    print("the value is too long!")
+try:
+    if x<999:
+        raise Exception
+except Exception:
+    print("the value is too short!")
+try:
+    if x < 9999 and x > 999:
+        raise Exception
+except Exception:
+    print("Right value!")
+
+#4
+try:
+username = input("Username: ")
+password = input("Password: ")
+retype = input("Retype Password: ")
+count = 0
+try:
+    if password != retype and count < 4:
+        count += 1
+        raise Exception
+except Exception:
+    retype = input("Retype Password: ")
+
+why not checking retype 3 times?
+
+
+username = input("Username: ")
+password = input("Password: ")
+retype = input("Retype Password: ")
+count = 0
+if password == 'abc' and password == retype and count < 4:
+    print("Login Successful!")
+else:
+    retype = input("Retype Password: ")
+    count = count + 1
+
+
+#5 - done reading the document
+
+#6
+f = open("doc.txt", "r")
+a = f.read()
+l = a.split(" ")
+l1 = []
+for i in l:
+    if len(i)%2 == 0 and i.isalpha() == True:
+        l1.append(i)
+
+print(l1)
+
+
+(or)
+l1 = [i for i in l if len(i)%2 == 0 and i.isalpha() == True]
+print(l1,'')
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+#Task 6
+#1
+
+a = str(input("please enter a string: "))
+l = [i for i in a if i.isupper()]
+print(str(l))
+
+#2
+students = ['Smit', 'Jaya', 'Rayan']
+subjects = ['CSE', 'Networking', 'Operating System']
+d = {students[i]:subjects[i] for i in range(len(students))}
+print(d)
+
+#done reading
+
+#4
+
+def reverse(a):
+    lr = a[::-1]
+    yield lr
+rev = reverse("Consultadd Training")
+print(rev.__next__())
+
+
+
+#5
+
+Example 1
+def first(msg):
+    print("hello")
+
+first("hello")
+second = first
+
+second("hello")
+
+Example 2
+def add(func):
+    def inner(a,b):
+        if a>b:
+            print(a-b)
+        return func(a,b)
+    return inner
+
+def div(a,b):
+    div = a/b
+    return div
+
+div1 = add(div)
+div1(5,2)
+
+Example3
+def mysecond(func):
+    def inner(a,b):
+        if a == b:
+            print("both a and b are equal!")
+        return func(a,b)
+    return inner
+
+def rec1(a,b):
+    c = a*b
+    return c
+
+rec2 = mysecond(rec1)
+print(rec2(5,2))
