@@ -9,6 +9,16 @@ print(l[::2])
 print(l[::-1])
 
 3
+a = [1,2,3,4,5]
+add = 0
+mult = 1
+for i in range(0, len(a)):
+    add = add + a[i]
+    mult = mult*a[i]
+print(add)
+print(mult)
+
+
 
 
 4
