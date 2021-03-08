@@ -92,17 +92,24 @@ even = list(filter(lambda n:n%2==0,l))
 square = list(map(lambda n:n*n, l))
 print (square)
 
-#12
+Alternate
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 def square():
     for i in l:
         i = i**2
     return i
-
 square()
-
 print(list(map(square(),l)))
+
+
+#12
+a=5
+b=0
+try:
+    c = a/b
+    print(c)
+except ZeroDivisionError:
+    print("Please enter any denominator value other than 0! ")
 
 
 #13
