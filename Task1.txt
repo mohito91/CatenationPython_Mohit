@@ -18,6 +18,7 @@ print("swapped value of a: ")
 print("swapped value of b: ")
 
 #3. Swap two numbers using a third variable and do the same task without using any third variable.
+#with third variable
 a = int(input("Please enter value of a: "))
 b = int(input("Please enter value of b: "))
 c = a
@@ -25,6 +26,14 @@ a = b
 b = c
 print ("swapped value of a is: ",a)
 print ("swapped value of b is: ",b)
+
+#without third variable
+a = int(input("Please enter value of a: "))
+b = int(input("Please enter value of b: "))
+a,b = b,a
+print ("swapped value of a is: ",a)
+print ("swapped value of b is: ",b)
+
 
 # 4. Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x
 # Version.
