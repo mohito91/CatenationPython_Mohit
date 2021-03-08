@@ -63,7 +63,28 @@ print(type(a))
 # 7. Create Variables using formats such as Upper CamelCase, Lower CamelCase, SnakeCase and
 # UPPERCASE.
 # (Refer: https://capitalizemytitle.com/camel-case/)
-a = input("enter your name to convert to Lower CamelCase and Upper CamelCase, SnakeCase and UPPERCASE: ")
+
+a = 'ThisIsUpperCamel'
+b = 'thisIsLowerCamel'
+c = 'THISISUPPERCASE'
+d = 'this_is_snake_case'
+print(a,b,c,d)
+
+#converting Upper Camel to Snake
+def changetosnake(a):
+    res = [a[0].lower()]
+    for i in a[1:]:
+        if i in ('ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
+            res.append('_')
+            res.append(i.lower())
+        else:
+            res.append(i)
+    return ''.join(res)
+
+a = "MyNameIsMohit"
+print(changetosnake(a))
+
+
 
 # 8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’
 # again. Will it change the value? If Yes then Why?
