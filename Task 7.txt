@@ -1,0 +1,35 @@
+#Task7
+#1
+
+# import math
+# class clsquare():
+#     def formula(self):
+#         C = 50
+#         H = 30
+#         D = int(input("Please enter value of D: "))
+#         Q = math.sqrt(int(2*C*D/H))
+#         print("The value of the Squareroot is: ", Q)
+#
+# s = clsquare()
+# s.formula()
+
+# #3
+# class sumtozero():
+#     def zero(self):
+#         l = [-25, -10, -7, -3, 2, 4, 8, 10]
+#         n = len(l)
+#         result = 0
+#         l1 = []
+#         for i in range(0,n):
+#             for j in range(i+1,n):
+#                 for z in range(i+2, n):
+#                     if (l[i] + l[j] + l[z] == result):
+#                         print("the pairs are: ", l[i],  l[j],  l[z])
+#
+# s = sumtozero()
+# s.zero()
+
+# add key value to empty list
+# d = {}
+# d['key1'] = 'mohit'
+# print(d)
